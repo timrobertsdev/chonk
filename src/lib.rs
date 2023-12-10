@@ -3,10 +3,6 @@
 /// An iterator over a slice in (configurably-overlapping) chunks (`read_size`
 /// elements at a time, while stepping `chunk_size` elements), starting at the
 /// beginning of the slice.
-/// 
-/// TODO: Remainder doc, algo
-/// 
-/// This struct is created by the [`chonks`] method on 
 #[derive(Debug)]
 #[must_use = "iterators are lazy and do nothing unless consumed"]
 pub struct Chonks<'a, T: 'a> {
